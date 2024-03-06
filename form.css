@@ -1,0 +1,23 @@
+#bg{
+   background-image:url("/Users/admin/Downloads/bts-concert-1200-x-900-picture-ve03nm83e2hayqde.jpg");
+   background-size: cover;
+}
+h1{
+    color:blueviolet;
+    font-size:40px;
+    font-family:sans-serif;
+    font-weight: bold; 
+    font-style: italic;
+}
+#bt{
+    background-color: white;
+    font-size:10px;
+    color:black;
+    padding:10px;
+    margin:10px;
+}
+#parag{
+    color:black;
+    font-size:20px;
+    font-family:sans-sarif; 
+}
