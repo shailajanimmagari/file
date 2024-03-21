@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #007bff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .menu-item {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+      transition: background-color 0.3s;
+    }
+
+    .menu-item:hover {
+      background-color: #f4f4f4;
+    }
+
+    .menu-cost {
+      float: right;
+    }
+
+    .contact-details,
+    .special-varieties {
+      display: none;
+    }
+
+    .menu-item:hover .contact-details,
+    .menu-item:hover .special-varieties {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="menu-item" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+      <span>Grilled Chicken</span>
+      <span class="menu-cost">1000 RS.</span>
+      <div class="contact-details">
+        <p>Contact: 12345-67890</p>
+      </div>
+      <div class="special-varieties">
+        <p>Special Varieties: Spicy, ans Sweet</p>
+      </div>
+    </div>
+
+    
+  </div>
+
+  <script>
+    function showDetails(menuItem) {
+      menuItem.querySelector('.contact-details').style.display = 'block';
+      menuItem.querySelector('.special-varieties').style.display = 'block';
+    }
+
+    function hideDetails(menuItem) {
+      menuItem.querySelector('.contact-details').style.display = 'none';
+      menuItem.querySelector('.special-varieties').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
